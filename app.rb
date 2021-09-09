@@ -6,7 +6,7 @@ require './lib/toggl'
 
 module App
   module_function def run
-    date = Date.today - 1
+    date = Date.today
 
     toggl = Toggl.new(ENV['TOGGL_API_TOKEN'])
     project_ids = ENV['TOGGL_PROJECT_IDS']
